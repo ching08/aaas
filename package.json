@@ -1,0 +1,25 @@
+{
+    "name": "aaas",
+    "version": "0.0.1",
+    "private": true,
+    "dependencies": {
+         "request": "^2.65.0",
+        "config": "1.17.1",
+        "express": "4.13.3",
+        "logrotator": "1.0.1",
+        "node-dir": "0.1.11",
+        "node-flow-context": "git+https://bitbucket-eng-rtp1.cisco.com/bitbucket/scm/spvss_ih_dev/flow-context-lib-node.git",
+        "stack-trace": "0.0.9",
+        "moment-timezone": "0.4.1",
+        "forever-monitor": "1.7.0"
+    },
+    "devDependencies": {
+        "jshint": "latest",
+        "istanbul": "latest",
+        "istanbul-middleware": "latest",
+        "jasmine-node": "latest"
+    },
+    "scripts": {
+     "test": "jasmine-node --junitreport --verbose --forceexit unit_tests"
+  }
+}

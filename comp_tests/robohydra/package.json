@@ -1,0 +1,21 @@
+{
+  "name": "robohydra",
+  "version": "0.0.1",
+  "description": "mock server for aaas test server ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-flow-context":
+  "git+https://bitbucket-eng-rtp1.cisco.com/bitbucket/scm/spvss_ih_dev/flow-context-lib-node.git",
+    "log4js": "~0.6.16",
+    "node-uuid" : "^1.4.7",
+    "qs": "6.0.1",
+    "request": "^2.67.0",
+    "robohydra": "0.6.2",
+    "url": "~0.11.0"
+  }
+}

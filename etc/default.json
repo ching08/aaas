@@ -1,0 +1,77 @@
+{
+    "server": {
+        "host": "localhost",
+        "port": 8888
+    },
+    "projects": [
+        {"api": "sf14"}
+    ],
+    "HE":{
+        "lab": "tenant",
+        "timeout":10000
+    },
+    "tenants":{
+        "tenant": {
+            "he":"IH/1.0.0",
+            "upm": "http://upm:6040",
+            "cmdc": "http://cmdc:5600",
+            "pps": "http://pps:6060",
+            "hep": "http://hep:6030",
+            "smfe": "http://sesman:8080",
+            "sg": "http://localhost:8081",
+            "pcpe": "http://pcpe:8885",
+            "companionSg" : "https://sesguard.##DOMAIN##",
+            "sched": "http://sched:9001",
+            "syncadaptor": "http://syncadaptor:8080",
+            "favm" : "http://favm:9002"
+        }
+     },
+     "scheduleSource":"sched",
+     "smfeSource": {
+         "LINEAR": "http://sesman:8080",
+         "VOD": "http://sesman:8080",
+         "CDVR": "http://sesman:8080"
+     },
+     "thirdparty": {
+        "appstore_mock": {
+            "provider": "accedo",
+            "loginUrl": "http://phoenix-aas-api.cloud.accedo.tv",
+            "apiUrl": "http://aas-api.cloud.accedo.tv",
+            "launchUrl": "http://appsol.accedo.tv/chicago/appLaunch/?appId=",
+            "apiKey":"06147cc8adfe7bb678acec5c08b489fa"
+            },
+            "appstore": {
+            "provider": "accedo",
+            "loginUrl": "http://localhost:4000",
+            "apiUrl": "http://localhost:4000",
+            "launchUrl": "http://appsol.accedo.tv/chicago/appLaunch/?appId=",
+            "apiKey":"06147cc8adfe7bb678acec5c08b489fa"
+            }
+        },
+    "log" :
+    {
+        "config":{
+            "logstashHost": "logstash",
+            "logstashPort": 3335,
+            "filename":"log/cma.log",
+            "maxLogSize": "150m",
+            "backups": 10,
+            "console":false,
+            "levels": {
+                "all": "ALL"
+            }
+        },
+        "disable" : false
+    },
+	"coverage": {
+        "status": false,
+        "port": 8122
+    },
+    "defaultLang" : "deu",
+    "forever":{
+        "max": 50,                 
+        "errFile": "log/cma_err.log"
+    },
+    "useWatershedCache" : true
+}
+

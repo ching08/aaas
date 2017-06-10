@@ -1,0 +1,11 @@
+{
+   "demo_mode":false,
+    "accedo_real": {
+         "login": "phoenix-aas-api.cloud.accedo.tv",
+        "api": "aas-api.cloud.accedo.tv"
+    },
+     "accedo": {
+        "login": "localhost:3000",
+        "api": "localhost:3000"
+    }
+}

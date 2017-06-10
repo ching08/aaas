@@ -1,0 +1,15 @@
+============================================
+GET /hello
+  Headers:
+    * host: localhost:3000
+    * connection: keep-alive
+    * upgrade-insecure-requests: 1
+    * user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.84 Safari/537.36
+    * accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+    * accept-encoding: gzip, deflate, sdch
+    * accept-language: en-US,en;q=0.8,zh-CN;q=0.6
+--------------------------------------------
+Response code: 200
+  Headers:
+    * content-type: application/json
+  Content (228 bytes): {"success":true,"results":[{"url":"http://robohydra.org","title":"RoboHydra testing tool"},{"url":"http://en.wikipedia.org/wiki/Hydra","title":"Hydra - Wikipedia"},{"env":"env vars","title":"test /Users/cisco/VGW/aaas_cannie"}]}
